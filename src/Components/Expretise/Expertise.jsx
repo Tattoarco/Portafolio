@@ -30,7 +30,7 @@ const Expertise = () => {
         </h2>
 
         
-        <div className="relative z-10 w-[80%] mx-auto grid grid-cols-3 gap-4 max-md:grid-cols-1 mt-[9rem]">
+        <div className="relative z-10 w-[80%] mx-auto grid grid-cols-3 gap-4 max-md:grid-cols-1 mt-[9rem] max-md:white-space:nowrap max-md:overflow-hidden;">
           <div className="w-full border-4 shadow-2xl flex flex-col p-10 rounded-lg bg-opacity-75 hover:bg-white hover:text-black hover:border-orange-400 hover:scale-105 transition-all duration-300 backdrop-blur-none hover:backdrop-blur-none group">
             <div className="flex items-center justify-center">
               <i className="fas fa-laptop-code text-5xl pr-3 group-hover:text-orange-600" />

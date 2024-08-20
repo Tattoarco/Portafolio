@@ -8,7 +8,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="p-4 fixed mb-[40rem] w-full z-10">
+    <nav className="p-4 fixed w-full z-10">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-orange-600 text-2xl font-bold">Web Developer</div>
         <div className="md:hidden">

@@ -9,11 +9,11 @@ const Contact = () => {
             </svg>
           </div>
           <div className="relative w-full flex justify-center">
-            <div className="grid gap-6 grid-cols-2 mt-32 w-[70%]">
-              <div className="grid justify-center font-bold backdrop-blur-sm p-5">
-                <h3 className="text-5xl">Social networks </h3>
+            <div className="grid gap-6 grid-cols-2 mt-32 w-[70%] max-md:grid-cols-1 ">
+              <div className="grid justify-center font-bold bg-[#169ad85b] rounded-xl shadow-md  backdrop-blur-lg p-5">
+                <h3 className="text-5xl text-white">Social networks </h3>
 
-                <div className="flex gap-4">
+                <div className="flex gap-4 items-center justify-center">
                   <a href="https://github.com/Tattoarco/" target="_blank">
                     <img src="/github.svg" alt="GitHub Tatiana Mosquera" className="w-14 hover:scale-110 transition-all duration-300" />
                   </a>
@@ -25,13 +25,15 @@ const Contact = () => {
                   </a>
                 </div>
 
-                <a href="/Hoja de vida Tatiana Mosquera.pdf" download="Tatiana-Mosquera-HV.pdf" className="bg-orange-600 text-white rounded-lg p-4 gap-3 flex justify-center items-center hover:bg-white hover:border-2 hover:border-orange-600 shadow-lg hover:text-orange-600 hover:scale-105 transition-all duration-300 mt-4">
+                <a href="/Hoja de vida Tatiana Mosquera.pdf" download="Tatiana-Mosquera-HV.pdf" className="w-full h-[54px] bg-orange-600 text-white rounded-lg p-4 gap-3 flex justify-center items-center hover:bg-white hover:border-2 hover:border-orange-600 shadow-lg hover:text-orange-600 hover:scale-105 transition-all duration-300 mt-4">
                   <i className="fa-solid fa-cloud-arrow-down"></i>
                   <p>Descargar CV</p>
                 </a>
+
               </div>
-              <div className="flex gap-10 justify-center font-bold backdrop-blur-sm p-5">
+              <div className="flex flex-col gap-10 p-5 justify-center items-center font-bold bg-[#169ad85b] rounded-xl shadow-md  backdrop-blur-lg text-wrap text-white">
                 <h3 className="text-5xl">About me</h3>
+                <p className="text-lg text-[#0f172a] text-justify p-6">I am a technologist in analysis and software development, passionate about creating interactive user interfaces. I am currently studying Digital Entertainment Design Engineering at the Pontificia Bolivariana University. I have participated in several projects, from the analysis part to the development of this.</p>
               </div>
             </div>
           </div>
