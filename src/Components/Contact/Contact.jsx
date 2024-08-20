@@ -9,7 +9,7 @@ const Contact = () => {
             </svg>
           </div>
           <div className="relative w-full flex justify-center">
-            <div className="grid gap-6 grid-cols-2 mt-32 w-[70%] max-md:grid-cols-1 ">
+            <div className="grid gap-6 grid-cols-2 mt-32 w-[70%] h-[20rem] max-md:grid-cols-1 ">
               <div className="grid justify-center font-bold bg-[#169ad85b] rounded-xl shadow-md  backdrop-blur-lg p-5">
                 <h3 className="text-5xl text-white">Social networks </h3>
 
