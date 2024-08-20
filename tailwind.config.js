@@ -12,11 +12,6 @@ module.exports = {
       animation: {
         slideInFromLeft: "slideInFromLeft 1s ease-out forwards",
       },
-      base: "/Portafolio/", // Ajusta esto según el nombre de tu repositorio
-      build: {
-        outDir: "dist", // Asegúrate de que el directorio de salida sea 'dist'
-        assetsDir: "assets",
-      },
     },
   },
   plugins: [],
