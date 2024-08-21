@@ -25,12 +25,11 @@ const Expertise = () => {
   return (
     <>
       <section className="relative h-screen bg-[#0f172a] max-md:h-full text-white flex flex-col items-center justify-center">
-        <h2 ref={titleRef} className={`${isVisible ? "animate-slideInFromLeft" : "opacity-0"} absolute  text-8xl font-bold mb-[25rem]`}>
+        <h2 ref={titleRef} className={`${isVisible ? "animate-slideInFromLeft" : "opacity-0"} pb-6  text-7xl font-bold`}>
           My Expertise
         </h2>
-
         
-        <div className="relative z-10 w-[80%] mx-auto grid grid-cols-3 gap-4 max-md:grid-cols-1 mt-[9rem] max-md:white-space:nowrap max-md:overflow-hidden;">
+        <div className="relative z-10 w-[80%] mx-auto grid grid-cols-3 gap-4 max-md:grid-cols-1  max-md:white-space:nowrap max-md:overflow-hidden;">
           <div className="w-full border-4 shadow-2xl flex flex-col p-10 rounded-lg bg-opacity-75 hover:bg-white hover:text-black hover:border-orange-400 hover:scale-105 transition-all duration-300 backdrop-blur-none hover:backdrop-blur-none group">
             <div className="flex items-center justify-center">
               <i className="fas fa-laptop-code text-5xl pr-3 group-hover:text-orange-600" />
