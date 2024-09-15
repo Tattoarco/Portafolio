@@ -12,6 +12,10 @@ module.exports = {
       animation: {
         slideInFromLeft: "slideInFromLeft 1s ease-out forwards",
       },
+      colors: {
+        'light-blue': '#169ad85b',
+        'foreground-text': '#0f172a',
+      }
     },
   },
   plugins: [],
