@@ -1,7 +1,16 @@
+import React, { useState } from "react";
+import { ModalGmail } from "../Modals/ModalGmail";
 
 const Contact = () => {
+  const [modalGmail, setModalGmail] = useState(false);
+
+  const modalOpenGmail = () => {
+    setModalGmail(!modalGmail);
+  };
+
   return (
     <>
+      {modalGmail && <ModalGmail cerrarModal={modalOpenGmail} />}
       <section>
         <div className="relative h-screen max-md:h-full">
           <div className="absolute inset-x-0 top-0">
@@ -11,7 +20,7 @@ const Contact = () => {
           </div>
           <div className="w-full h-screen flex justify-center items-center">
             <div className="flex justify-center items-center gap-10 w-[70%] max-md:grid-cols-1 max-md:grid h-[30rem] ">
-              <div className="grid justify-center font-bold bg-[#169ad85b] rounded-xl shadow-md  backdrop-blur-lg p-5 w-[50%] h-[65%] max-md:h-[95%] max-md:w-[100%]">
+              <div className="grid justify-center font-bold bg-[#169ad85b] rounded-xl shadow-md backdrop-blur-lg p-5 w-[50%] h-[65%] max-md:h-[95%] max-md:w-[100%]">
                 <h3 className="text-5xl text-white">Social networks </h3>
 
                 <div className="flex gap-4 items-center justify-center max-md:pt-10">
@@ -21,23 +30,20 @@ const Contact = () => {
                   <a href="www.linkedin.com/in/tatiana-mosquera-068a29251" target="_blank">
                     <img src="/inkedin.webp" alt="Linkedin Tatiana Mosquera" className="w-14 hover:scale-110 transition-all duration-300" />
                   </a>
-                  <a href="mailto:atatianamosquera@gmail.com" target="_blank">
+                  <a href="mailto:atatianamosquera@gmail.com"  target="_blank">
                     <img src="/gmail.webp" alt="Gmail Tatiana Mosquera" className="w-14 hover:scale-110 transition-all duration-300" />
                   </a>
                 </div>
 
                 <a href="/Hoja de vida Tatiana Mosquera.pdf" download="Tatiana-Mosquera-HV.pdf" className="w-full h-[54px] bg-orange-600 text-white rounded-lg p-4 gap-3 flex justify-center items-center hover:bg-white hover:border-2 hover:border-orange-600 shadow-lg hover:text-orange-600 hover:scale-105 transition-all duration-300 mt-4">
                   <i className="fa-solid fa-cloud-arrow-down"></i>
-                  <p>Descargar CV</p>
+                  <p>DOWNLOAD RESUME</p>
                 </a>
               </div>
 
-              <div className="flex flex-col  pt-5 items-center font-bold bg-[#169ad85b] rounded-xl shadow-md backdrop-blur-lg text-wrap text-white w-[50%] h-[65%] max-md:h-[95%] max-md:w-[100%]">
+              <div className="flex flex-col pt-5 items-center font-bold bg-[#169ad85b] rounded-xl shadow-md backdrop-blur-lg text-wrap text-white w-[50%] h-[65%] max-md:h-[95%] max-md:w-[100%]">
                 <h3 className="text-5xl ">About me</h3>
-                <p
-                  className="text-base
-                   text-[#0f172a] text-justify p-6"
-                >
+                <p className="text-base text-[#0f172a] text-justify p-6">
                   I am a technologist in analysis and software development, passionate about creating interactive user interfaces. I am currently studying Digital Entertainment Design Engineering at the Pontificia Bolivariana University. I have participated in several projects, from the analysis part to the development of this.
                 </p>
               </div>
